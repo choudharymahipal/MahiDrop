@@ -2,9 +2,10 @@ import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-downloader',
-  templateUrl: './downloader.component.html',
-  styleUrl: './downloader.component.scss'
+    selector: 'app-downloader',
+    templateUrl: './downloader.component.html',
+    styleUrl: './downloader.component.scss',
+    standalone: false
 })
 export class DownloaderComponent {
   url: string = '';
