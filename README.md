@@ -1,3 +1,4 @@
+<pre>
   __  __       _     _            _____                  
  |  \/  |     | |   (_)          |  __ \                 
  | \  / | __ _| |__  _   ______  | |  | |_ __ ___  _ __  
@@ -6,7 +7,7 @@
  |_|  |_|\__,_|_| |_|_|          |_____/|_|  \___/| .__/ 
                                                   | |    
                                                   |_|    
-
+</pre>
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0.
 
