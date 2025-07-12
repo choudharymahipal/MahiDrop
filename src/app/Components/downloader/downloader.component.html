@@ -1,26 +1,52 @@
-<ul class="nav nav-pills nav-fill gap-2 p-1 small bg-primary rounded-5 shadow-sm" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
-  <li class="nav-item" role="presentation">
-    <button class="nav-link active rounded-5" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">Home</button>
-  </li>
-  <li class="nav-item" role="presentation">
-    <button class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Profile</button>
-  </li>
-  <li class="nav-item" role="presentation">
-    <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Contact</button>
-  </li>
-</ul>
-<div class="container">
-  <h2>🎬 Download Social Media Content</h2>
-  <input [(ngModel)]="url" type="text" placeholder="Paste social media URL here..." />
-  <button (click)="downloadMedia()">Download</button>
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <h1>Download Social Media Videos<br> in One Click</h1>
+    <p>Save reels, stories, and posts from Instagram, TikTok, Facebook, and more
+      — <br class="d-none d-md-block">without watermarks, completely free.</p>
 
-  <div *ngIf="loading">Loading...</div>
-  <div *ngIf="error" class="error">{{ error }}</div>
+    <!-- Input box -->
+    <div
+      class="input-wrapper d-flex shadow-sm rounded-3 overflow-hidden bg-white">
+      <input [(ngModel)]="url" type="text"
+        class="form-control border-0 px-4 py-3"
+        placeholder="Paste video URL here...">
+      <button (click)="downloadMedia()" class="btn px-4 fw-semibold"
+        type="button">Download</button>
+    </div>
 
-  <div *ngIf="mediaData">
-    <h3>Preview:</h3>
-    <img *ngIf="mediaData.type === 'image'" [src]="mediaData.url" width="300" />
-    <video *ngIf="mediaData.type === 'video'" [src]="mediaData.url" width="300" controls></video>
-    <a [href]="mediaData.url" download>Download Now</a>
+    <div *ngIf="loading">Loading...</div>
+    <div *ngIf="error" class="error">{{ error }}</div>
+
+    <div *ngIf="mediaData">
+      <h3>Preview:</h3>
+      <img *ngIf="mediaData.type === 'image'" [src]="mediaData.url"
+        width="300" />
+      <video *ngIf="mediaData.type === 'video'" [src]="mediaData.url"
+        width="300"
+        controls></video>
+      <a [href]="mediaData.url" download>Download Now</a>
+    </div>
+
+    <div *ngIf="!error" class="text-muted small">Example:
+      https://www.instagram.com/reel/ABC123/</div>
   </div>
+</section>
+
+<!-- Social Icons -->
+<div class="text-center">
+  <div class="social-icons my-4">
+    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png"
+      alt="Instagram">
+    <img src="https://cdn-icons-png.flaticon.com/512/3046/3046122.png"
+      alt="TikTok">
+    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384053.png"
+      alt="Facebook">
+    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
+      alt="YouTube">
+    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384033.png"
+      alt="Twitter">
+  </div>
+  <p class="footer-text">Already used by over <strong class="text-dark">2
+      million</strong> people worldwide</p>
 </div>

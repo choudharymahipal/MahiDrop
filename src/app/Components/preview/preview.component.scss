@@ -1,0 +1,43 @@
+.card-box {
+  max-width: 900px;
+  margin: 50px auto;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+  padding: 30px;
+}
+
+.video-preview {
+  border-radius: 12px;
+  width: 100%;
+  height: auto;
+}
+
+.download-btn {
+  background: linear-gradient(90deg, #7c3aed, #a855f7);
+  color: white;
+  font-weight: 600;
+  border: none;
+}
+
+.btn-format {
+  background-color: #f1f3f5;
+  font-weight: 500;
+  border: none;
+}
+
+.btn-format i {
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .video-container {
+    margin-top: 20px;
+  }
+}
+
+.previewBg {
+  background-color: #f8f9fb;
+  font-family: "Segoe UI", sans-serif;
+  padding: 30px;
+}

@@ -1,0 +1,27 @@
+.cta-section {
+  background: linear-gradient(135deg, #5b34f2, #7f3ce0);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+.cta-section h2 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.cta-section p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.cta-section .btn-download {
+  background-color: #ffffff;
+  color: #5b34f2;
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+}
+.cta-section .btn-download:hover {
+  background-color: #e2e8f0;
+  color: #5b34f2;
+}
